@@ -7,8 +7,8 @@ type ViteWithVitestConfig = UserConfig & { test: InlineConfig };
 export default {
   resolve: {
     alias: {
-      "@": resolve(__dirname, "src"),
-      "@tests": resolve(__dirname, "tests"),
+      "@/src": resolve(__dirname, "src"),
+      "@/tests": resolve(__dirname, "tests"),
     },
   },
   plugins: [],

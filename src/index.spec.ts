@@ -1,6 +1,6 @@
-import { bootstrap } from "@/index";
+import { exampleTestHelper } from "@/tests/helpers/example";
 
-import { exampleTestHelper } from "@tests/helpers/example";
+import { bootstrap } from "./index";
 
 describe("test file", () => {
   test("example test", () => {

@@ -25,12 +25,11 @@ export default [
       "import-helpers": importHelpers,
     },
     rules: {
-      // TODO: break this rule for tests folder.
       "no-relative-import-paths/no-relative-import-paths": [
         "error",
         {
           allowSameFolder: true,
-          rootDir: "src",
+          rootDir: ".",
           prefix: "@",
         },
       ],
@@ -40,8 +39,8 @@ export default [
           newlinesBetween: "always",
           groups: [
             "module",
-            "/^@//",
-            "/^@tests//",
+            "/^@/src//",
+            "/^@/tests//",
             ["parent", "sibling", "index"],
           ],
           alphabetize: { order: "asc", ignoreCase: true },
